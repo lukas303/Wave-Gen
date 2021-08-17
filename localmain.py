@@ -72,22 +72,14 @@ if __name__ == "__main__":
     latitude = 35.481402
     longitude = 12.511284
     start = arrow.now()
+    print(start)
     end = arrow.now()
-    print("Start ",start)
-    print("End: ",end)
     start = start.shift(hours=+1)
     end = start.shift(hours=+1)
-    print("Start ",start)
-    print("End: ",end)
          
     now = datetime.datetime.now()
     hour = now.hour
     lastHour = hour - 1
-
-    print("Start ",start)
-    print("End: ",end)
-    #start = start.timestamp()
-    #end = end.timestamp()
 
     while(1):
 
